@@ -74,9 +74,3 @@ class Get_News_By_Category(APIView):
         serializers = NewsSerializers(news, many=True)
         return Response(serializers.data)
 
-
-# class All_Todo(APIView):
-#     def get(self, request, *args, **kwargs):
-#         all_todo = Todo.objects.all()
-#         serializers = TodoSerializers(all_todo, many=True)
-#         return Response(serializers.data)
